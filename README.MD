@@ -7,7 +7,7 @@ README v1
 
 ## User
 
-- [ ] Create Account
+- [✔] Create Account
 - [ ] See Profile
 - [ ] Login
 - [ ] Edit Profile
