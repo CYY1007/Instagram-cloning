@@ -8,7 +8,7 @@ README v1
 ## User
 
 - [✔] Create Account
-- [ ] See Profile
+- [✔] See Profile
 - [ ] Login
 - [ ] Edit Profile
 - [ ] Follow User
