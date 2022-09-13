@@ -1,6 +1,6 @@
-import client from "../client";
+import client from "../../client";
 
-export default{
+export default {
     Query:{
         seeProfile: async (_,{username}) => await client.user.findUnique({
             where:{
