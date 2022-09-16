@@ -9,5 +9,7 @@ type User {
     email: String!
     createdAt: String!
     updatedAt: String!
+    bio: String
+    avatarURL: String
   }
 `

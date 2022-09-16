@@ -1,13 +1,14 @@
 require('dotenv').config();
-
-import { ApolloServer,gql } from "apollo-server";
-import schema from "./schema";
+import express from "express"
+import logger from "morgan"
+import { ApolloServer} from "apollo-server-express";
+import {typeDefs,resolvers}from "./schema";
 import { getUser,protectResolvers } from "./users/users.utils";
 
 
 
 const server = new ApolloServer({
-    schema,
+    typeDefs,resolvers,
     context: async ({req}) =>{
         return {
             loggedInUser: await getUser(req.headers.authorization),
@@ -16,6 +17,11 @@ const server = new ApolloServer({
     },
 });
 
+const app = express();
+
+server.applyMiddleware({app});
+app.use(logger("dev"));
+app.use("/static", express.static("uploads"));
 const PORT = process.env.PORT;
 
-server.listen(PORT).then(() => console.log(`🚀 Server is running on http://localhost:${PORT}`))
+app.listen({port:PORT},() => console.log(`🚀 Server is running on http://localhost:${PORT}`)); 
