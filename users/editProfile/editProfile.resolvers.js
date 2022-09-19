@@ -3,7 +3,7 @@ import client from "../../client"
 import bcrypt from "bcrypt"
 import { protectResolvers } from "../users.utils";
 
-const editProfileResolver = async (_,{firstName,lastName,username,email,password:unHashedPass,bio,avatarURL},{loggedInUser,protectResolvers},) => {
+const editProfileResolver = async (_,{firstName,lastName,username,email,password:unHashedPass,bio,avatarURL},{loggedInUser},) => {
         try{
         let avatar = null;
         if (avatarURL){    

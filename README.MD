@@ -8,9 +8,10 @@ README v1
 ## User
 
 - [✔] Create Account
-- [✔] See Profile
-- [ ] Login
-- [ ] Edit Profile
-- [ ] Follow User
-- [ ] Unfollow User
-- [ ] Change Avatar (Image Upload!)
+- [❕] See Profile (업데이트 예정)
+- [✔] Login
+- [✔] Edit Profile
+- [✔] Follow User
+- [✔] Unfollow User
+- [] Add show followers and followings with pagination
+- [] Change Avatar (Image Upload!)

@@ -11,5 +11,7 @@ type User {
     updatedAt: String!
     bio: String
     avatarURL: String
+    following: [User]
+    followers: [User]
   }
 `
