@@ -13,5 +13,9 @@ type User {
     avatarURL: String
     following: [User]
     followers: [User]
+    totalFollowers: Int!
+    totalFollowings: Int!
+    isFollowing: Boolean!
+    isMe: Boolean!
   }
 `

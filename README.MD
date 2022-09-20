@@ -13,5 +13,9 @@ README v1
 - [✔] Edit Profile
 - [✔] Follow User
 - [✔] Unfollow User
-- [] Add show followers and followings with pagination
-- [] Change Avatar (Image Upload!)
+- [✔] see followers by offset pagination
+- [✔] see followings by cursor pagination
+- [✔] Change Avatar (Image Upload!)
+- [✔] Computed Fields
+- [] Serach Users
+
